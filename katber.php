@@ -32,8 +32,8 @@ while ($record = mysqli_fetch_array($query)) {
                   <div class="col-lg-6">
                     <div class="form-floating mb-3">
                       <select class="form-select" name="jenismenu" id="">
-                        <option value="1">Pulen</option>
-                        <option value="2">Pera</option>
+                        <option value="1">Beras Merah</option>
+                        <option value="2">Beras Putih</option>
                       </select>
                       <label for="floatingInput">Jenis Beras</label>
                       <div class="invalid-feedback">
@@ -85,7 +85,7 @@ while ($record = mysqli_fetch_array($query)) {
                       <div class="form-floating mb-3">
                         <select class="form-select" aria-label="Default select example" required name="jenismenu" id="">
                           <?php
-                          $data = array("pulen", "pera");
+                          $data = array("Beras Merah", "Beras Putih");
                           foreach ($data as $key => $value) {
                             if ($row['jenis_menu'] == $key + 1) {
                               echo "<option selected value=" . ($key + 1) . ">$value</option>";
@@ -174,7 +174,7 @@ while ($record = mysqli_fetch_array($query)) {
                 ?>
                 <tr>
                   <th scope="row"><?php echo $no++ ?></th>
-                  <td><?php echo ($row['jenis_menu'] == 1) ? "liter" : "kg" ?></td>
+                  <td><?php echo ($row['jenis_menu'] == 1) ? "Beras Merah" : "Beras Putih"  ?></td>
                   <td><?php echo $row['kategori_menu'] ?></td>
                   <td class="d-flex">
                     <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal"

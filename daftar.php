@@ -73,7 +73,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id_kat_menu,kategori_menu FROM tb
                         }
                         ?>
                       </select>
-                      <label for="floatingInput">Kategori Pera atau Pulen</label>
+                      <label for="floatingInput">Kategori Kg atau Liter</label>
                       <div class="invalid-feedback">
                         Tolong Masukan Kategori Beras.
                       </div>
@@ -347,7 +347,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id_kat_menu,kategori_menu FROM tb
                   </td>
                   <td><?php echo $row['nama_menu'] ?></td>
                   <td><?php echo $row['keterangan'] ?></td>
-                  <td><?php echo ($row['jenis_menu'] == 1) ? "Pulen" : "Pera" ?></td>
+                  <td><?php echo ($row['jenis_menu'] == 1) ? "Beras Merah" : "Beras Putih" ?></td>
                   <td><?php echo $row['kategori_menu'] ?></td>
                   <td><?php echo $row['harga'] ?></td>
                   <td><?php echo $row['stok'] ?></td>
